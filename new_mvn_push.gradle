@@ -3,7 +3,7 @@ apply plugin: 'signing'
 
 def PUBLISH_GROUP_ID = 'io.github.MrZWC' //
 
-def PUBLISH_ARTIFACT_ID = "klog"
+def PUBLISH_ARTIFACT_ID = "roundlayout"
 
 def PUBLISH_VERSION = android.defaultConfig.versionName //这个是直接获取的库gradle里配置好的版本号，不用到处修改版本号，只需要维护一份就可以。
 
@@ -46,7 +46,7 @@ afterEvaluate{
                 // we'll set up in a moment
                 groupId PUBLISH_GROUP_ID
                 artifactId PUBLISH_ARTIFACT_ID
-                version="2.0.0"
+                version="1.0.0"
 
                 // Two artifacts, the `aar` and the sources
                 from components.release
@@ -56,9 +56,9 @@ afterEvaluate{
                 // Self-explanatory metadata for the most part
                 pom {
                     name = PUBLISH_ARTIFACT_ID
-                    description = 'klog log日志'
+                    description = 'round layout'
                     // If your project has a dedicated site, use its URL here
-                    url = 'https://github.com/MrZWC/KLog'
+                    url = 'https://github.com/MrZWC/RoundLayout'
                     licenses {
                         license {
                             //协议类型，一般默认Apache License2.0的话不用改：
@@ -76,10 +76,10 @@ afterEvaluate{
                     // Version control info, if you're using GitHub, follow the format as seen here
                     scm {
                         //修改成你的Git地址：
-                        connection = 'scm:https://github.com/MrZWC/KLog.git'
-                        developerConnection = 'scm:git:ssh://git@github.com:MrZWC/KLog.git'
+                        connection = 'scm:https://github.com/MrZWC/RoundLayout.git'
+                        developerConnection = 'scm:git:ssh://git@github.com:MrZWC/RoundLayout.git'
                         //分支地址：
-                        url = 'https://github.com/MrZWC/KLog'
+                        url = 'https://github.com/MrZWC/RoundLayout'
                     }
                     // A slightly hacky fix so that your POM will include any transitive dependencies
                     // that your library builds upon
@@ -105,7 +105,7 @@ afterEvaluate{
             maven {
                 // This is an arbitrary name, you may also use "mavencentral" or
                 // any other name that's descriptive for you
-                name = "klog"
+                name = "roundlayout"
 
                 def releasesRepoUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
                 def snapshotsRepoUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
