@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.zwc.round.RoundFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rv_backgroundColor="#D81B60"
+        app:rv_cornerRadius="6dp"
+        android:padding="10dp">
+
+        <com.zwc.round.RoundTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sssss" />
+    </com.zwc.round.RoundFrameLayout>
+</LinearLayout>
